@@ -14,7 +14,7 @@ const ShowBookings = () => {
     const fetchBookings = async () => {
       try {
         // Fetch bookings for the logged-in user
-        const response = await axios.get(`http://localhost:5000/api/bookings/user/${userInfo._id}`);
+        const response = await axios.get(`https://event-management-akshit.vercel.app//api/bookings/user/${userInfo._id}`);
         setBookings(response.data); // Set the bookings in state
 
       } catch (error) {

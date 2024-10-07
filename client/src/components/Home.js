@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/events'); // Fetch events
+        const response = await axios.get('https://event-management-akshit.vercel.app//api/events'); // Fetch events
         setAllEvents(response.data); // Set the events to state
       } catch (error) {
         setError('Error fetching events');

@@ -12,9 +12,9 @@ const Bookings = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const bookingResponse = await axios.get('http://localhost:5000/api/bookings');
-        const userResponse = await axios.get('http://localhost:5000/api/users'); // Fetch all users
-        const eventResponse = await axios.get('http://localhost:5000/api/events'); // Fetch all events
+        const bookingResponse = await axios.get('https://event-management-akshit.vercel.app//api/bookings');
+        const userResponse = await axios.get('https://event-management-akshit.vercel.app//api/users'); // Fetch all users
+        const eventResponse = await axios.get('https://event-management-akshit.vercel.app//api/events'); // Fetch all events
 
         setBookings(bookingResponse.data); // Assuming response.data contains an array of bookings
         setUsers(userResponse.data); // Assuming response.data contains an array of users

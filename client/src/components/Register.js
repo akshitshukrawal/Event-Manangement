@@ -12,7 +12,7 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/users/register', { username, password });
+            const response = await axios.post('https://event-management-akshit.vercel.app//api/users/register', { username, password });
 
             // Assuming the response contains user info or token
             const userInfo = response.data;
