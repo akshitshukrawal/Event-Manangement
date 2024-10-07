@@ -11,7 +11,9 @@ const CreateBooking = () => {
     const handleCreateBooking = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://event-management-akshit.vercel.app/api/bookings', { eventId, noOfTickets, userId });
+            await axios.post('https://event-management-akshit.vercel.app/api/bookings', { eventId, noOfTickets, userId }, {
+                withCredentials: true
+              });
             setSuccess('Booking created successfully');
             setEventId('');
             setNoOfTickets('');

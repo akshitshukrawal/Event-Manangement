@@ -16,7 +16,9 @@ const CreateEvent = () => {
                 name, 
                 ticketsLeft: parseInt(ticketsLeft), // Ensure ticketsLeft is a number
                 date: eventDate // Include the event date
-            });
+            }, {
+                withCredentials: true
+              });
             setSuccess('Event created successfully');
             setName('');
             setTicketsLeft('');

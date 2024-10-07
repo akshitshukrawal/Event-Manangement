@@ -16,7 +16,7 @@ app.use(express.json({ limit: "30mb" }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors(
     {
-        origin:["https://event-management-akshit.vercel.app"],
+        origin:["https://event-manangement-frontend.vercel.app"],
         method:["POST","GET"],
         Credential:true
     }
@@ -39,7 +39,7 @@ mongoose.connect(mongoURI, {
 const front = (req,res) => {
     res.json("hello world");
 }
-app.use('/',front)
+app.use('/',front);
 app.use('/api/users', userRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/events', eventRoutes);

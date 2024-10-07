@@ -14,6 +14,8 @@ const Admin = ({isAdmin,setIsAdmin}) => {
         const response = await axios.post('https://event-management-akshit.vercel.app/api/users/admin', {
           username: userInfo.username,
           password: userInfo.password
+        }, {
+          withCredentials: true
         });
         
         // Check if the user is admin

@@ -19,6 +19,8 @@ const Booking = ({ event }) => {
         eventId: event._id, 
         noOfTickets: ticketCount, 
         userId: userInfo._id 
+      }, {
+        withCredentials: true
       });
 
       // Set success message if the booking is successful
