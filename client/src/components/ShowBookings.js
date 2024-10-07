@@ -17,6 +17,7 @@ const ShowBookings = () => {
         const response = await axios.get(`https://akshit-event-manager.vercel.app/api/bookings/user/${userInfo._id}`, {
           withCredentials: true
         });
+        console.log(response.data);
         setBookings(response.data); // Set the bookings in state
 
       } catch (error) {
