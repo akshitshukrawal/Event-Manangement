@@ -17,7 +17,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 
 // CORS configuration
 app.use(cors({
-    origin: "https://event-manangement-frontend.vercel.app", // Frontend URL
+    origin: "https://akshit-event-frontend.vercel.app", // Frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],               // Allowed methods
     credentials: true,                                       // Allow credentials (cookies, etc.)
     allowedHeaders: ["Content-Type", "Authorization", "x-requested-with"] // Allow required headers
