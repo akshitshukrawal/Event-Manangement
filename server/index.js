@@ -36,6 +36,10 @@ mongoose.connect(mongoURI, {
 });
 
 // Routes
+const front = (req,res) => {
+    res.json("hello world");
+}
+app.use('/',front)
 app.use('/api/users', userRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/events', eventRoutes);
