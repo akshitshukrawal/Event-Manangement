@@ -12,7 +12,7 @@ const CreateEvent = () => {
         e.preventDefault();
         try {
             // Send event name, tickets left, and date to the API
-            await axios.post('https://event-management-akshit.vercel.app/api/events', { 
+            await axios.post('https://akshit-event-manager.vercel.app/api/events', { 
                 name, 
                 ticketsLeft: parseInt(ticketsLeft), // Ensure ticketsLeft is a number
                 date: eventDate // Include the event date

@@ -9,7 +9,7 @@ const ShowOneBooking = ({ booking }) => {
   useEffect(() => {
     const getEventById = async () => {
       try {
-        const response = await axios.get(`https://event-management-akshit.vercel.app/api/events/${booking.event}`, {
+        const response = await axios.get(`https://akshit-event-manager.vercel.app/api/events/${booking.event}`, {
           withCredentials: true
         });
         setEvent(response.data[0]);

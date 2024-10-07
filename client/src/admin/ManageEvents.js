@@ -8,7 +8,7 @@ const ManageEvents = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('https://event-management-akshit.vercel.app/api/events', {
+        const response = await axios.get('https://akshit-event-manager.vercel.app/api/events', {
           withCredentials: true
         }); // Adjust the endpoint as necessary
         setAllEvents(response.data);
@@ -23,7 +23,7 @@ const ManageEvents = () => {
   // Delete an event by ID
   const deleteEvent = async (eventId) => {
     try {
-      await axios.delete(`https://event-management-akshit.vercel.app/api/events/${eventId}`, {
+      await axios.delete(`https://akshit-event-manager.vercel.app/api/events/${eventId}`, {
         withCredentials: true
       }); // Adjust the endpoint as necessary
       setAllEvents((prevEvents) => prevEvents.filter(event => event._id !== eventId)); // Update state

@@ -12,7 +12,7 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://event-management-akshit.vercel.app/api/users/register', { username, password }, {
+            const response = await axios.post('https://akshit-event-manager.vercel.app/api/users/register', { username, password }, {
                 withCredentials: true
               });
 

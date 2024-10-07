@@ -11,7 +11,7 @@ const Admin = ({isAdmin,setIsAdmin}) => {
   useEffect(() => {
     const checkAdmin = async () => {
       try {
-        const response = await axios.post('https://event-management-akshit.vercel.app/api/users/admin', {
+        const response = await axios.post('https://akshit-event-manager.vercel.app/api/users/admin', {
           username: userInfo.username,
           password: userInfo.password
         }, {
