@@ -17,7 +17,7 @@ function App() {
     const checkAdmin = async () => {
       if (userInfo) { // Ensure userInfo exists before checking admin status
         try {
-          const response = await axios.post('https://event-management-akshit.vercel.app//api/users/admin', {
+          const response = await axios.post('https://event-management-akshit.vercel.app/api/users/admin', {
             username: userInfo.username,
             password: userInfo.password
           });

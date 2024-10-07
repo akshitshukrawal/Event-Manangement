@@ -11,7 +11,7 @@ const Login = ({ setIsAdmin }) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://event-management-akshit.vercel.app//api/users/login', { username, password });
+            const response = await axios.post('https://event-management-akshit.vercel.app/api/users/login', { username, password });
             // Assuming the response contains user data including isAdmin
             const userInfo = response.data;
 

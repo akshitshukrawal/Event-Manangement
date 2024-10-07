@@ -15,7 +15,7 @@ const Booking = ({ event }) => {
     try {
 
       // Post booking data to API
-      const response = await axios.post('https://event-management-akshit.vercel.app//api/bookings', { 
+      const response = await axios.post('https://event-management-akshit.vercel.app/api/bookings', { 
         eventId: event._id, 
         noOfTickets: ticketCount, 
         userId: userInfo._id 
